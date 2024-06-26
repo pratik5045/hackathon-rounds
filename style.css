@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: mons;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: mons;
+    src: url(/Montserrat-VariableFont_wght.ttf);
+}
+
+.rounds-info{
+    height: 25vw;
+    width: 100%;
+    /* background-color: aqua; */
+    background-image: url(assets/hackathon2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.header-div{
+    width: 100%;
+    height: 10%;
+}
+.rounds-info h3{
+    padding-top: 1vw;
+    padding-left: 2vw;
+    font-size: 2vw;
+    color:#fff;
+}
+
+.round-div{
+     width: 100%;
+     height: 75%;
+     display: flex;
+     /* background-color: red; */
+     justify-content: space-around;
+     align-items: center;
+     margin-top: 2vh;
+}
+.round{
+    width: 25vw;
+    height: 15vw;
+    /* background-color: #fff; */
+    backdrop-filter: blur(10px);
+    border: 1px solid gray;
+    border-radius: 12px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 1vh;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.round h2{
+    font-size: 5vh;
+    color: #007bff;
+    font-weight: 600;
+}
+
+@media (min-width:1px) and (max-width:425px){
+    .rounds-info{
+        width: 100%;
+        height: 85vh;
+        /* background-color: aqua; */
+    }
+ .header-div{
+    width: 100%;
+    height: 10vh;
+    text-align: center;
+    padding-top: 1vh;
+ }
+    .header-div h3{
+        font-size: 5vh;
+        font-weight: 500;
+
+    }
+    .round-div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .round{
+        width: 40vh;
+        height: 80vh;
+        margin-top: 3vh;
+    }
+
+    .round h2{
+        font-size: 4vh;
+        font-weight: 600;
+    }
+}
